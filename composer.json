@@ -1,0 +1,25 @@
+{
+    "name": "xjx/xjx-helper",
+    "description": "后台PHP开发常用辅助方法",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/xj2000hjy/xjx-helper",
+    "keywords": [
+        "xjx",
+        "helper",
+        "assist"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Xjx\\XjxHelper\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "小俊侠",
+            "email": "3374978@qq.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
