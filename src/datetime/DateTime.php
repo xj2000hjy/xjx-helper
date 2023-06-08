@@ -6,7 +6,7 @@
  * @date    2023-05-26 23:39:26
  */
 
-namespace Xjx\XjxHelper\datetime;
+namespace xjx\datetime;
 
 
 class DateTime {

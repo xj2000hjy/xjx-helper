@@ -1,25 +1,41 @@
 {
-    "name": "xjx/xjx-helper",
-    "description": "后台PHP开发常用辅助方法",
-    "type": "library",
-    "license": "MIT",
-    "homepage": "https://github.com/xj2000hjy/xjx-helper",
-    "keywords": [
-        "xjx",
-        "helper",
-        "assist"
+  "name": "xj2000hjy/xjx-helper",
+  "description": "后台PHP开发常用辅助方法",
+  "type": "library",
+  "license": "MIT",
+  "scripts": {
+    "dev": "php -S localhost:8080 index.php"
+  },
+  "scripts-descriptions": {
+    "dev": "启动服务器."
+  },
+  "homepage": "https://github.com/xj2000hjy/xjx-helper",
+  "keywords": [
+    "xjx",
+    "helper",
+    "assist"
+  ],
+  "autoload": {
+    "files": [
+      "src/function.php"
     ],
-    "autoload": {
-        "psr-4": {
-            "Xjx\\XjxHelper\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "小俊侠",
-            "email": "3374978@qq.com"
-        }
-    ],
-    "minimum-stability": "beta",
-    "require": {}
+    "psr-4": {
+      "xjx\\": "src",
+      "xjx\\string\\": "src/string",
+      "xjx\\datetime\\": "src/datetime",
+      "xjx\\libs\\": "src/libs",
+      "xjx\\controller\\": "src/controller",
+      "xjx\\json\\": "src/json"
+    }
+  },
+  "authors": [
+    {
+      "name": "小俊侠",
+      "email": "3374978@qq.com"
+    }
+  ],
+  "minimum-stability": "beta",
+  "require": {
+    "gregwar/captcha": "^1.1"
+  }
 }

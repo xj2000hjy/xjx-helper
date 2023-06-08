@@ -1,5 +1,5 @@
 <?php
-namespace Xjx\XjxHelper\json;
+namespace xjx\json;
 
 /**
  * 接口响应类
@@ -42,6 +42,9 @@ class Resp {
     } else {
       $result = array_merge(static::$tmp_result, ['data' => []]);
     }
+
+    # ob_clean();
+    exit(json_encode($result, JSON_UNESCAPED_UNICODE));
   }
 
   /**
@@ -77,7 +80,7 @@ class Resp {
       $result = array_merge(static::$tmp_result, ['data' => []]);
     }
 
-    ob_clean();
+    # ob_clean();
     exit(json_encode($result, JSON_UNESCAPED_UNICODE));
   }
 }
